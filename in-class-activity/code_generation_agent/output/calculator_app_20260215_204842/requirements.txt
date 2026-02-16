@@ -1,0 +1,2 @@
+# No external dependencies required for this simple calculator
+# Python 3.6+ is required
