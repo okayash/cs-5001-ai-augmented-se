@@ -40,7 +40,6 @@ variants:
       - No markdown formatting
       - Create an additional README.md file with usage instructions and examples.
       - Create a requirements.txt file listing all dependencies.
-      - IMPORTANT: Do NOT create tests or a `tests/` directory.
 
   minimal:
     description: "Generate minimal, concise code"
