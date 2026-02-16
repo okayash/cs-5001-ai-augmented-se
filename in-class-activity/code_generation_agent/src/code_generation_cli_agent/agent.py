@@ -108,15 +108,6 @@ class Agent:
                 self.tools.write(f_path, content)
                 self._log(f"Wrote: {f_path}")
 
-            # Remove any top-level tests/ directory if present (cleanup)
-            tests_dir = self.repo / 'tests'
-            if tests_dir.exists() and tests_dir.is_dir():
-                try:
-                    shutil.rmtree(tests_dir)
-                    self._log("Removed top-level tests/ directory as requested.")
-                except Exception as e:
-                    self._log(f"Failed to remove tests/ directory: {e}")
-
             return RunResult(True, f"Scaffolded project with {len(file_blocks)} files.")
 
         # Fallback: single-module output
